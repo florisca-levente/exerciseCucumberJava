@@ -1,4 +1,5 @@
 ### How to run tests
+The definitions are in the `src/test/java/StepsDefinitions.java` file. All the methods used for testing are placed there.
 The tests are located in _src/test/resources/_, both tests have the `.feature` extension.
 To run, simply right click the name of the file and select to run the test file. ![img.png](img.png)
 
