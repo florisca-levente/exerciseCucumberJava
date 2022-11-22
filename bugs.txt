@@ -1,0 +1,57 @@
+Summary:
+The uppercase characters are not counted as vowels or consonants
+
+Description:
+When the user attempts to add a string with uppercase letters, they will not be counted as vowels or consonants.
+
+Steps to reproduce:
+1. Call the application with uppercase and lowercase chars
+
+Bug:
+The app will count only the lowercase letters
+
+Expected results:
+The application should count both, lower and uppercase letters.
+
+---------------------------------
+
+Summary:
+The result is not in the order the strings are entered
+
+Description:
+When multiple strings are entered (eg. "first", "second", "third") the result is not always returned in the same order.
+According to java doc (https://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html): it does not guarantee that the order will remain constant over time.
+LinkedHashMap should solve this issue: https://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html
+
+Steps to reproduce:
+Note! You might need to rerun multiple times in order to catch the issue, as the HashMap might give the correct order as well.
+1. Call the application with input: "first", "second", "third"
+2. Check the order of the output
+
+Bug:
+The order received is not the same as the order entered.
+
+Expected results:
+According to the acceptance criteria:
+I should see the number of vowels and consonant for each string in the order they are keyed in.
+
+---------------------------------
+
+Summary:
+Entering 4 strings at once will provide no result
+
+Description:
+Entering 4 strings at once will result in no counting of vowels and consonants.
+
+Steps to reproduce:
+1. Call the application with input: "first", "second", "third", "forth"
+2. Check for the output
+
+Bug:
+The application offers no output for the 4 strings.
+
+Expected results:
+According to the acceptance criteria:
+I should be able to add up to 4 strings at once.
+
+
